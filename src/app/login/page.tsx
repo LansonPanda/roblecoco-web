@@ -12,7 +12,7 @@ export default function LoginPage() {
           <div className="flex items-center justify-center rounded-lg bg-zinc-950 p-5 md:max-w-[18rem] md:justify-self-center md:p-6">
             <div className="w-full max-w-[12rem] overflow-hidden rounded-lg border border-white/10 bg-white/5 p-3">
               <Image
-                src="/test1.png"
+                src="/roblecoco-logo.png"
                 alt="Roble CoCo 로고"
                 width={200}
                 height={200}
