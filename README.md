@@ -1,5 +1,20 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Supabase Social Login
+
+카카오/네이버 소셜 로그인을 사용하려면 Supabase 대시보드에서 아래 설정이 필요합니다.
+
+1. `Authentication > Providers`에서 `Kakao`, `Naver`를 활성화합니다.
+2. 각 provider의 `Client ID`와 `Client Secret`을 입력합니다.
+3. `Authentication > URL Configuration`에 다음 Redirect URL을 추가합니다.
+
+```text
+http://localhost:3000/auth/callback
+```
+
+4. 카카오/네이버 동의 항목에서 이메일, 이름, 전화번호 권한을 확인합니다.
+5. 최초 소셜 로그인 후에는 `/signup/store-info`에서 매장명을 입력하고 `stores` 테이블에 저장됩니다.
+
 ## Getting Started
 
 First, run the development server:
